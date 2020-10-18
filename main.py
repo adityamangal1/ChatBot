@@ -12,11 +12,11 @@ trainer = ChatterBotCorpusTrainer(chatbot)
 
 trainer.train('chatterbot.corpus.english')
 
-print('\t\t\t simple chatbot')
-print('You can exit by type exit\n')
+print('\t\t\t A Chatbot')
+print('You can quit by type q\n')
 while True:
     query = input(">> ")
-    if 'exit' in query:
+    if 'q' in query:
         exit()
     else:
         print(chatbot.get_response(query))
